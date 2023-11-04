@@ -41,7 +41,11 @@ img {
 /* ALGEMENE STYLING */
 /********************/
 body {
-  background-color: #e0218a;
+  background-color: #e7accc;
+  background-image: url(../images/barbie-ii-site-bg.png);
+  background-repeat: no-repeat;
+  background-position: 45% -2%;
+  background-size: 850px 650px;
 }
 
 h1 {
