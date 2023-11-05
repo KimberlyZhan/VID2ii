@@ -21,13 +21,16 @@ img {
   max-width: 100%;
 }
 
+
 /********/
 /* FONT */
 /********/
+
 @font-face {
   font-family: "Bartex, Georgia, serif";
   src: url(../fonts/bartex-font);
 }
+
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -40,9 +43,11 @@ img {
 
 }
 
+
 /********************/
 /* ALGEMENE STYLING */
 /********************/
+
 body {
   background-color: var(--color-bg);
 }
@@ -52,10 +57,20 @@ h1 {
   color: var(--color-barbie);
 
   text-align: center;
-  font-size: 1.7em;
+  font-size: 2em;
 }
 
-/******** KLEDINGKAST BARBIE OUTFITS ********/
+button {
+  background: none;
+  border: none;
+}
+
+
+/******************************************/
+/******* KLEDINGKAST BARBIE OUTFITS *******/
+/******************************************/
+
+/* de kledingkast zelf */
 article:nth-of-type(1) {
   background-image: url(../images/barbie-kledingkast.png);
   background-repeat: no-repeat;
@@ -75,55 +90,65 @@ section:nth-of-type(2) {
   justify-content: center;
 }
 
-section:nth-of-type(2) img:nth-of-type(1) {
-  width: 3.5em;
-
-  position: absolute;
-  left: 12.6em;
-  top: 16.5em;
-}
-
-section:nth-of-type(2) img:nth-of-type(2) {
-  width: 3.5em;
-
-  position: absolute;
-  left: 18.8em;
-  top: 16em;
-}
-
-section:nth-of-type(2) img:nth-of-type(3) {
-  width: 3.5em;
-
-  position: absolute;
-  left: 25.5em;
-  top: 13.5em;
-}
-
-section:nth-of-type(2) img:nth-of-type(4) {
+/* debut outfit, 1959 */
+section:nth-of-type(2) button:nth-of-type(1) {
   width: 5em;
 
   position: absolute;
-  left: 12em;
-  top: 24em;
+  left: 14.7em;
+  top: 20.2em;
 }
 
-section:nth-of-type(2) img:nth-of-type(5) {
-  width: 8.5em;
+/* Barbie als chirurg outfit, 1973 */
+section:nth-of-type(2) button:nth-of-type(2) {
+  width: 5em;
 
   position: absolute;
-  left: 16.5em;
-  top: 25em;
+  left: 22.2em;
+  top: 20em;
 }
 
-section:nth-of-type(2) img:nth-of-type(6) {
-  width: 4em;
+/* Barbie als Olympische zwemmer outfit, 2001 */
+section:nth-of-type(2) button:nth-of-type(3) {
+  width: 5em;
 
   position: absolute;
-  left: 25em;
-  top: 24.4em;
+  left: 30em;
+  top: 16.4em;
 }
 
-/******** KAST BARBIE HUIS MET POPPEN ********/
+/* Barbie als kandidaat voor president outfit, 2004 */
+section:nth-of-type(2) button:nth-of-type(4) {
+  width: 6.5em;
+
+  position: absolute;
+  left: 14.3em;
+  top: 29.5em;
+}
+
+/* Barbie met hijab outfit, 2017 */
+section:nth-of-type(2) button:nth-of-type(5) {
+  width: 9.5em;
+
+  position: absolute;
+  left: 20.3em;
+  top: 31em;
+}
+
+/* Barbie als frontline worker tijdens de pandemie outfit, 2021 */
+section:nth-of-type(2) button:nth-of-type(6) {
+  width: 5em;
+
+  position: absolute;
+  left: 30em;
+  top: 30em;
+}
+
+/*******************************************/
+/******* KAST BARBIE HUIS MET POPPEN *******/
+/*******************************************/
+
+/* de kast met huis erop */
 article:nth-of-type(2){
   background-image: url(../images/barbie-kast-met-huis.png);
   background-repeat: no-repeat;
