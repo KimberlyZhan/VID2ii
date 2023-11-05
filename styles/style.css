@@ -19,29 +19,30 @@ img {
   max-width:100%;
 }
 
-
-
-
+/********/
+/* FONT */
+/********/
+@font-face {
+  font-family: "Bartex, Georgia, serif";
+  src: url(../fonts/bartex-font);
+}
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 
 :root {
-  --color-headings:crimson
-  /* ... */
+  --color-barbie: #e0218a;
+  --color-bg: #e7accc;
+  
 
 }
-
-
-
-
 
 /********************/
 /* ALGEMENE STYLING */
 /********************/
 body {
-  background-color: #e7accc;
+  background-color: var(--color-bg);
   background-image: url(../images/barbie-ii-site-bg.png);
   background-repeat: no-repeat;
   background-position: 45% -2%;
@@ -49,7 +50,66 @@ body {
 }
 
 h1 {
-  color:var(--color-headings);
+  font-family: "Bartex";
+  color:var(--color-barbie);
+
+  text-align: center;
+  font-size: 1.7em;
 }
 
+/******** KLEDINGKAST BARBIE OUTFITS ********/
+section:nth-of-type(2) {
+  width: 4em;
 
+  display: grid;
+  grid-template-columns: 5em 5em 5em;
+  grid-template-rows: 5em 5em 5em;
+}
+
+section:nth-of-type(2) img:nth-of-type(1){
+  width: 3.5em;
+
+  position: absolute;
+  left: 15.4em;
+  top: 15.2em;
+}
+
+section:nth-of-type(2) img:nth-of-type(2){
+  width: 3.5em;
+
+  position: absolute;
+  left: 21em;
+  top: 14em;
+}
+
+section:nth-of-type(2) img:nth-of-type(3){
+  width: 3.5em;
+
+  position: absolute;
+  left: 27.2em;
+  top: 12em;
+}
+
+section:nth-of-type(2) img:nth-of-type(4){
+  width: 5em;
+
+  position: absolute;
+  left: 14.7em;
+  top: 22.5em;
+}
+
+section:nth-of-type(2) img:nth-of-type(5){
+  width: 8.5em;
+
+  position: absolute;
+  left: 19.2em;
+  top: 23em;
+}
+
+section:nth-of-type(2) img:nth-of-type(6){
+  width: 4em;
+
+  position: absolute;
+  left: 27.2em;
+  top: 23.3em;
+}
