@@ -3,20 +3,22 @@
 /**************/
 
 /* naar een idee van Jen Simmons */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 body {
-  margin:0;
+  margin: 0;
 }
 
 button:not([disabled]) {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 img {
-  max-width:100%;
+  max-width: 100%;
 }
 
 /********/
@@ -34,7 +36,7 @@ img {
 :root {
   --color-barbie: #e0218a;
   --color-bg: #e7accc;
-  
+
 
 }
 
@@ -43,73 +45,90 @@ img {
 /********************/
 body {
   background-color: var(--color-bg);
-  background-image: url(../images/barbie-ii-site-bg.png);
-  background-repeat: no-repeat;
-  background-position: 45% -2%;
-  background-size: 850px 650px;
 }
 
 h1 {
   font-family: "Bartex";
-  color:var(--color-barbie);
+  color: var(--color-barbie);
 
   text-align: center;
   font-size: 1.7em;
 }
 
 /******** KLEDINGKAST BARBIE OUTFITS ********/
+article:nth-of-type(1) {
+  background-image: url(../images/barbie-kledingkast.png);
+  background-repeat: no-repeat;
+  background-position: 10%;
+  background-size: 500px 650px;
+
+  height: 650px;
+}
+
 section:nth-of-type(2) {
-  width: 4em;
+
+  width: auto;
 
   display: grid;
-  grid-template-columns: 5em 5em 5em;
-  grid-template-rows: 5em 5em 5em;
+  grid-template-columns: 8.5em 8.5em 8.5em;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
 }
 
-section:nth-of-type(2) img:nth-of-type(1){
+section:nth-of-type(2) img:nth-of-type(1) {
   width: 3.5em;
 
   position: absolute;
-  left: 15.4em;
-  top: 15.2em;
+  left: 12.6em;
+  top: 16.5em;
 }
 
-section:nth-of-type(2) img:nth-of-type(2){
+section:nth-of-type(2) img:nth-of-type(2) {
   width: 3.5em;
 
   position: absolute;
-  left: 21em;
-  top: 14em;
+  left: 18.8em;
+  top: 16em;
 }
 
-section:nth-of-type(2) img:nth-of-type(3){
+section:nth-of-type(2) img:nth-of-type(3) {
   width: 3.5em;
 
   position: absolute;
-  left: 27.2em;
-  top: 12em;
+  left: 25.5em;
+  top: 13.5em;
 }
 
-section:nth-of-type(2) img:nth-of-type(4){
+section:nth-of-type(2) img:nth-of-type(4) {
   width: 5em;
 
   position: absolute;
-  left: 14.7em;
-  top: 22.5em;
+  left: 12em;
+  top: 24em;
 }
 
-section:nth-of-type(2) img:nth-of-type(5){
+section:nth-of-type(2) img:nth-of-type(5) {
   width: 8.5em;
 
   position: absolute;
-  left: 19.2em;
-  top: 23em;
+  left: 16.5em;
+  top: 25em;
 }
 
-section:nth-of-type(2) img:nth-of-type(6){
+section:nth-of-type(2) img:nth-of-type(6) {
   width: 4em;
 
   position: absolute;
-  left: 27.2em;
-  top: 23.3em;
+  left: 25em;
+  top: 24.4em;
+}
+
+/******** KAST BARBIE HUIS MET POPPEN ********/
+article:nth-of-type(2){
+  background-image: url(../images/barbie-kast-met-huis.png);
+  background-repeat: no-repeat;
+  background-position: 90%;
+  background-size: 400px 650px;
+
+  height: 650px;
 }
