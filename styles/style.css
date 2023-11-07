@@ -39,7 +39,7 @@ img {
 :root {
   --color-barbie: #e0218a;
   --color-bg: #e7accc;
-
+  --color-text: #000000;
 
 }
 
@@ -58,6 +58,22 @@ h1 {
 
   text-align: center;
   font-size: 2em;
+}
+
+h2 {
+  font-family: "Bartex";
+  color: var(--color-text) ;
+
+  text-align: center;
+  font-size: 1.5em;
+}
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: var(--color-text);
+
+  text-align: center;
+  max-width: 50em;
 }
 
 button {
@@ -150,7 +166,7 @@ section:nth-of-type(2) button:nth-of-type(6) {
 /*******************************************/
 
 /* de kast met huis erop */
-section:nth-of-type(3){
+section:nth-of-type(3) {
   background-image: url(../images/barbie-kast-met-huis.png);
   background-repeat: no-repeat;
   background-position: 85%;
@@ -158,94 +174,151 @@ section:nth-of-type(3){
 
   height: 650px;
   min-width: 65em;
-
-  display: grid; 
-  grid-template-columns: 1fr repeat(2, 2fr) repeat(2, 1fr); 
-  grid-template-rows: repeat(5, 1fr); 
-  grid-column-gap: 2px;
-  grid-row-gap: 2px;
 }
 
 /* de 1959 debut Barbie pop */
 section:nth-of-type(3) button:nth-of-type(1){
-  grid-area: 3 / 1 / 4 / 2; } 
+  width: 5em;
+
+  position: absolute;
+  right: 32em;
+  bottom: 21em;
+}
 
 /* de 1965 buigende knie Barbie pop */
-section:nth-of-type(3) button:nth-of-type(2){ 
-  grid-area: 3 / 2 / 4 / 3; }
+section:nth-of-type(3) button:nth-of-type(2){
+  width: 6em;
+
+  position: absolute;
+  right: 24em;
+  bottom: 21em;
+}
 
 /* de 1967 Twist n Turn Barbie pop */
-section:nth-of-type(3) button:nth-of-type(3){ 
-  grid-area: 2 / 1 / 3 / 2; }
+section:nth-of-type(3) button:nth-of-type(3){
+  width: 3.4em;
 
-/* Barbie poppen 1971 */
-section:nth-of-type(4){
-    display: flex;
-  }
+  position: absolute;
+  right: 34em;
+  bottom: 26.5em;
+}
 
 /* de 1971 Malibu Barbie pop */
-section:nth-of-type(4) button:nth-of-type(4){
-  grid-area: 2 / 2 / 3 / 3; } 
+section:nth-of-type(3) button:nth-of-type(4){
+  width: 2.7em;
+
+  position: absolute;
+  right: 29em;
+  bottom: 27em;
+}
 
 /* de 1971 Live Action Barbie pop */
-section:nth-of-type(4) button:nth-of-type(5){ 
-  grid-area: 2 / 2 / 3 / 3; } 
+section:nth-of-type(3) button:nth-of-type(5){
+  width: 4.3em;
+  position: absolute;
+  right: 24.5em;
+  bottom: 27em;
+}
 
 /* de 1980 darkskin Barbie pop */
-section:nth-of-type(3) button:nth-of-type(6){ 
-  grid-area: 1 / 1 / 2 / 2; }
+section:nth-of-type(3) button:nth-of-type(6){
+  width: 4.2em;
+
+  position: absolute;
+  right: 31em;
+  bottom: 32.5em;
+}
 
 /* de 2015 flat feet Barbie pop */
-section:nth-of-type(3) button:nth-of-type(7){ 
-  grid-area: 1 / 2 / 2 / 3; }
+section:nth-of-type(3) button:nth-of-type(7){
+  width: 6em;
 
-/* Barbie poppen 2016 */
-section:nth-of-type(5){
-  display: flex;
+  position: absolute;
+  right: 24em;
+  bottom: 33em;
 }
 
 /* de 2016 curvy Barbie pop */
-section:nth-of-type(5) button:nth-of-type(8){ 
-  grid-area: 1 / 3 / 2 / 5; }
+section:nth-of-type(3) button:nth-of-type(8){
+  width: 6.3em;
+
+  position: absolute;
+  right: 19em;
+  bottom: 33em;
+}
 
 /* de 2016 petite Barbie pop */
-section:nth-of-type(5) button:nth-of-type(9){ 
-  grid-area: 1 / 3 / 2 / 5; }
+section:nth-of-type(3) button:nth-of-type(9){
+  width: 2.2em;
+
+  position: absolute;
+  right: 19em;
+  bottom: 33em;
+}
 
 /* de 2016 tall Barbie pop */
-section:nth-of-type(5) button:nth-of-type(10){ 
-  grid-area: 1 / 3 / 2 / 5; }
+section:nth-of-type(3) button:nth-of-type(10){
+  width: 2.5em;
 
-/* Barbie poppen 2020 */
-section:nth-of-type(6){
-  display: flex;
+  position: absolute;
+  right: 16.5em;
+  bottom: 32.3em;
 }
 
 /* de 2020 kale Barbie pop */
-section:nth-of-type(6) button:nth-of-type(11){ 
-  grid-area: 2 / 3 / 3 / 5; }
+section:nth-of-type(3) button:nth-of-type(11){
+  width: 3.5em;
+
+  position: absolute;
+  right: 20.5em;
+  bottom: 27em;
+}
 
 /* de 2020 rolstoel Barbie pop */
-section:nth-of-type(6) button:nth-of-type(12){ 
-  grid-area: 2 / 3 / 3 / 5; }
+section:nth-of-type(3) button:nth-of-type(12){
+  width: 6em;
+
+  position: absolute;
+  right: 16.5em;
+  bottom: 26.5em;
+}
 
 /* de 2020 vitiligo Barbie pop */
-section:nth-of-type(6) button:nth-of-type(13){ 
-  grid-area: 2 / 3 / 3 / 5; }
+section:nth-of-type(3) button:nth-of-type(13){
+  width: 3.5em;
 
-/* Barbie poppen 2022 */
-section:nth-of-type(7){
-  display: flex;
+  position: absolute;
+  right: 15em;
+  bottom: 27em;
 }
 
 /* de 2022 beenprothese Barbie pop */
-section:nth-of-type(7) button:nth-of-type(14){ 
-  grid-area: 3 / 3 / 4 / 4; }
+section:nth-of-type(3) button:nth-of-type(14){
+  width: 6em;
+
+  position: absolute;
+  right: 19em;
+  bottom: 21.5em;
+}
 
 /* de 2022 gehoorapparaten Barbie pop */
-section:nth-of-type(7) button:nth-of-type(15){ 
-  grid-area: 3 / 3 / 4 / 4; }
+section:nth-of-type(3) button:nth-of-type(15){
+  width: 2.3em;
+
+  position: absolute;
+  right: 18.5em;
+  bottom: 21.5em;
+}
 
 /* de 2023 syndroom van Down Barbie pop */
-section:nth-of-type(3) button:nth-of-type(16){ 
-  grid-area: 3 / 4 / 4 / 5; } 
+section:nth-of-type(3) button:nth-of-type(16){
+  width: 6em;
+  
+  position: absolute;
+  right: 13em;
+  bottom: 21.2em;
+}
+
+.hidden {
+  visibility: hidden;
+}
