@@ -38,8 +38,9 @@ img {
 
 :root {
   --color-barbie: #e0218a;
-  --color-bg: #e7accc;
+  --color-bg-kast: #e7accc;
   --color-text: #000000;
+  --color-bg: #fffadd;
 
 }
 
@@ -76,6 +77,10 @@ p {
   max-width: 50em;
 }
 
+li {
+  list-style: none;
+}
+
 button {
   background: none;
   border: none;
@@ -87,237 +92,82 @@ button {
 /******************************************/
 
 /* de kledingkast zelf */
-article:nth-of-type(1) {
-  background-image: url(../images/barbie-kledingkast.png);
-  background-repeat: no-repeat;
-  background-position: 10%;
-  background-size: 500px 650px;
+section:first-of-type {
+  height: 30em;
+  width: 25em;
 
-  height: 650px;
-  max-width: 90em;
+  background-color: var(--color-bg-kast);
+  border: solid 1em var(--color-barbie);
+  border-radius: 2em;
+  box-shadow: .5em .5em 1em rgb(138, 88, 113);
+
+  margin: auto;
 }
 
-section:nth-of-type(2) {
-
-  width: auto;
+ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
 
   display: grid;
-  grid-template-columns: 8.5em 8.5em 8.5em;
+  grid-template-columns: 33% 33% 33%;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
 }
 
 /* debut outfit, 1959 */
-section:nth-of-type(2) button:nth-of-type(1) {
+ul:first-of-type li:nth-of-type(1) {
   width: 5em;
 
-  position: absolute;
-  left: 14.7em;
-  top: 20.2em;
+  /* position: absolute;
+  top: 20.2em; */
 }
 
 /* Barbie als chirurg outfit, 1973 */
-section:nth-of-type(2) button:nth-of-type(2) {
+ul:first-of-type li:nth-of-type(2) {
   width: 5em;
 
-  position: absolute;
+  /* position: absolute;
   left: 22.2em;
-  top: 20em;
+  top: 20em; */
 }
 
 /* Barbie als Olympische zwemmer outfit, 2001 */
-section:nth-of-type(2) button:nth-of-type(3) {
+ul:first-of-type li:nth-of-type(3) {
   width: 5em;
 
-  position: absolute;
+  /* position: absolute;
   left: 30em;
-  top: 16.4em;
+  top: 16.4em; */
 }
 
 /* Barbie als kandidaat voor president outfit, 2004 */
-section:nth-of-type(2) button:nth-of-type(4) {
+ul:first-of-type li:nth-of-type(4) {
   width: 6.5em;
 
-  position: absolute;
+  /* position: absolute;
   left: 14.3em;
-  top: 29.5em;
+  top: 29.5em; */
 }
 
 /* Barbie met hijab outfit, 2017 */
-section:nth-of-type(2) button:nth-of-type(5) {
+ul:first-of-type li:nth-of-type(5) {
   width: 9.5em;
 
-  position: absolute;
+  /* position: absolute;
   left: 20.3em;
-  top: 31em;
+  top: 31em; */
 }
 
 /* Barbie als frontline worker tijdens de pandemie outfit, 2021 */
-section:nth-of-type(2) button:nth-of-type(6) {
+ul:first-of-type li:nth-of-type(6) {
   width: 5em;
 
-  position: absolute;
+  /* position: absolute;
   left: 30em;
-  top: 30em;
+  top: 30em; */
 }
 
-/*******************************************/
-/******* KAST BARBIE HUIS MET POPPEN *******/
-/*******************************************/
-
-/* de kast met huis erop */
-section:nth-of-type(3) {
-  background-image: url(../images/barbie-kast-met-huis.png);
-  background-repeat: no-repeat;
-  background-position: 85%;
-  background-size: 400px 650px;
-
-  height: 650px;
-  min-width: 65em;
-}
-
-/* de 1959 debut Barbie pop */
-section:nth-of-type(3) button:nth-of-type(1){
-  width: 5em;
-
-  position: absolute;
-  right: 32em;
-  bottom: 21em;
-}
-
-/* de 1965 buigende knie Barbie pop */
-section:nth-of-type(3) button:nth-of-type(2){
-  width: 6em;
-
-  position: absolute;
-  right: 24em;
-  bottom: 21em;
-}
-
-/* de 1967 Twist n Turn Barbie pop */
-section:nth-of-type(3) button:nth-of-type(3){
-  width: 3.4em;
-
-  position: absolute;
-  right: 34em;
-  bottom: 26.5em;
-}
-
-/* de 1971 Malibu Barbie pop */
-section:nth-of-type(3) button:nth-of-type(4){
-  width: 2.7em;
-
-  position: absolute;
-  right: 29em;
-  bottom: 27em;
-}
-
-/* de 1971 Live Action Barbie pop */
-section:nth-of-type(3) button:nth-of-type(5){
-  width: 4.3em;
-  position: absolute;
-  right: 24.5em;
-  bottom: 27em;
-}
-
-/* de 1980 darkskin Barbie pop */
-section:nth-of-type(3) button:nth-of-type(6){
-  width: 4.2em;
-
-  position: absolute;
-  right: 31em;
-  bottom: 32.5em;
-}
-
-/* de 2015 flat feet Barbie pop */
-section:nth-of-type(3) button:nth-of-type(7){
-  width: 6em;
-
-  position: absolute;
-  right: 24em;
-  bottom: 33em;
-}
-
-/* de 2016 curvy Barbie pop */
-section:nth-of-type(3) button:nth-of-type(8){
-  width: 6.3em;
-
-  position: absolute;
-  right: 19em;
-  bottom: 33em;
-}
-
-/* de 2016 petite Barbie pop */
-section:nth-of-type(3) button:nth-of-type(9){
-  width: 2.2em;
-
-  position: absolute;
-  right: 19em;
-  bottom: 33em;
-}
-
-/* de 2016 tall Barbie pop */
-section:nth-of-type(3) button:nth-of-type(10){
-  width: 2.5em;
-
-  position: absolute;
-  right: 16.5em;
-  bottom: 32.3em;
-}
-
-/* de 2020 kale Barbie pop */
-section:nth-of-type(3) button:nth-of-type(11){
-  width: 3.5em;
-
-  position: absolute;
-  right: 20.5em;
-  bottom: 27em;
-}
-
-/* de 2020 rolstoel Barbie pop */
-section:nth-of-type(3) button:nth-of-type(12){
-  width: 6em;
-
-  position: absolute;
-  right: 16.5em;
-  bottom: 26.5em;
-}
-
-/* de 2020 vitiligo Barbie pop */
-section:nth-of-type(3) button:nth-of-type(13){
-  width: 3.5em;
-
-  position: absolute;
-  right: 15em;
-  bottom: 27em;
-}
-
-/* de 2022 beenprothese Barbie pop */
-section:nth-of-type(3) button:nth-of-type(14){
-  width: 6em;
-
-  position: absolute;
-  right: 19em;
-  bottom: 21.5em;
-}
-
-/* de 2022 gehoorapparaten Barbie pop */
-section:nth-of-type(3) button:nth-of-type(15){
-  width: 2.3em;
-
-  position: absolute;
-  right: 18.5em;
-  bottom: 21.5em;
-}
-
-/* de 2023 syndroom van Down Barbie pop */
-section:nth-of-type(3) button:nth-of-type(16){
-  width: 6em;
-  
-  position: absolute;
-  right: 13em;
-  bottom: 21.2em;
-}
 
 .hidden {
   visibility: hidden;
