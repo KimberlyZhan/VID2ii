@@ -110,11 +110,11 @@ rozeDiamant.addEventListener("click", glitterRegen);
 function barbieGirl() {
     if (barbieMuziek == "uit") {
         barbiegirlSong.play();
-        barbieMuziek == "aan";
+        barbieMuziek = "aan";
 
     } else {
         barbiegirlSong.pause();
-        barbieMuziek == "uit"; // Het liedje wilt niet meer uit wanneer ik weer op de gele diamant klik, geen idee waarom niet.
+        barbieMuziek = "uit"; // Het liedje wilt niet meer uit wanneer ik weer op de gele diamant klik, geen idee waarom niet.
     }
 }
 
