@@ -10,6 +10,7 @@
 }
 
 
+
 /********/
 /* FONT */
 /********/
@@ -20,23 +21,43 @@
 }
 
 
+
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 
+/* light mode */
 :root {
   --color-barbie: #e0218a;
   --color-bg: #fffadd;
-  
+
   --color-bg-kast: #e7accc;
 
   --color-bg-spiegel: rgb(226, 192, 40);
-  --color-spiegel-lampjes:rgb(255, 227, 71);
+  --color-spiegel-lampjes: rgb(255, 227, 71);
 
   --color-text: #000000;
- 
-
 }
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-barbie: #FF7AC3;
+    --color-bg: #232037;
+
+    --color-bg-kast: #f5c2de;
+
+    --color-bg-spiegel: rgb(212, 173, 0);
+    --color-spiegel-lampjes: rgb(255, 235, 121);
+
+    --color-text: #000000;
+  }
+
+  header p {
+    color: rgb(252, 233, 233);
+  }
+}
+
 
 
 /********************/
@@ -45,7 +66,10 @@
 
 body {
   margin: 0;
+
   background-color: var(--color-bg);
+  background-image: url(/images/glitter-regen.gif);
+  background-repeat: repeat-x;
 }
 
 main {
@@ -109,6 +133,11 @@ button:not([disabled]) {
   cursor: pointer;
 }
 
+.hidden {
+  display: none;
+}
+
+
 
 /******************************************/
 /******* KLEDINGKAST BARBIE OUTFITS *******/
@@ -128,7 +157,8 @@ section:nth-of-type(1) {
   margin-right: 2em;
 }
 
-ul {
+/* lay-out grid van de outfits */
+ul:nth-of-type(1) {
   width: 100%;
   padding: 0;
   margin: 0;
@@ -140,7 +170,7 @@ ul {
 }
 
 /* debut outfit, 1959 */
-ul li:nth-of-type(1) {
+ul:nth-of-type(1) li:nth-of-type(1) {
   width: 5em;
 
   justify-self: center;
@@ -148,7 +178,7 @@ ul li:nth-of-type(1) {
 }
 
 /* Barbie als chirurg outfit, 1973 */
-ul li:nth-of-type(2) {
+ul:nth-of-type(1) li:nth-of-type(2) {
   width: 5em;
 
   justify-self: center;
@@ -156,7 +186,7 @@ ul li:nth-of-type(2) {
 }
 
 /* Barbie als Olympische zwemmer outfit, 2001 */
-ul li:nth-of-type(3) {
+ul:nth-of-type(1) li:nth-of-type(3) {
   width: 5em;
 
   justify-self: center;
@@ -164,7 +194,7 @@ ul li:nth-of-type(3) {
 }
 
 /* Barbie als kandidaat voor president outfit, 2004 */
-ul li:nth-of-type(4) {
+ul:nth-of-type(1) li:nth-of-type(4) {
   width: 6em;
 
   justify-self: center;
@@ -172,7 +202,7 @@ ul li:nth-of-type(4) {
 }
 
 /* Barbie met hijab outfit, 2017 */
-ul li:nth-of-type(5) {
+ul:nth-of-type(1) li:nth-of-type(5) {
   width: 9.5em;
 
   justify-self: center;
@@ -180,17 +210,20 @@ ul li:nth-of-type(5) {
 }
 
 /* Barbie als frontline worker tijdens de pandemie outfit, 2021 */
-ul li:nth-of-type(6) {
+ul:nth-of-type(1) li:nth-of-type(6) {
   width: 5em;
 
   justify-self: center;
   align-self: start;
 }
 
+
+
 /******************************************/
 /******* INFORMATIE DETAILS OUTFITS *******/
 /******************************************/
 
+/* spiegel design */
 section:nth-of-type(2) {
   height: 20em;
   width: 25em;
@@ -205,11 +238,61 @@ section:nth-of-type(2) {
 }
 
 section:nth-of-type(2) p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: normal;
   color: black;
 }
 
-/* informatie details verbergen met hidden */
-.hidden {
-  visibility: hidden;
+
+
+/*********************************/
+/******* GIF MARGOT ROBBIE *******/
+/*********************************/
+
+/* positioneren van Margot */
+section:nth-of-type(2) button {
+  width: 32%;
+  height: 50%;
+
+  position: relative;
+  right: 6%;
+  bottom: 17%;
 }
+
+
+
+/*************************/
+/******* DIAMANTEN *******/
+/*************************/
+
+/* roze diamant heart */
+section:nth-of-type(3) button:nth-of-type(1) {
+  width: 7em;
+
+  position: absolute;
+  bottom: 1em;
+  right: 4em;
+
+  transform: rotate(10deg);
+}
+
+/* gele diamand hoekig */
+section:nth-of-type(3) button:nth-of-type(2) {
+  width: 6em;
+
+  position: absolute;
+  bottom: 5.5em;
+  right: 1.5em;
+
+  transform: rotate(-30deg);
+}
+
+
+
+/*****************************/
+/******* GLITTER REGEN *******/
+/*****************************/
+
+/* img:first-of-type {
+  width: 30%;
+} */
