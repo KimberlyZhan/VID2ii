@@ -68,8 +68,6 @@ body {
   margin: 0;
 
   background-color: var(--color-bg);
-  background-image: url(/images/glitter-regen.gif);
-  background-repeat: repeat-x;
 }
 
 main {
@@ -293,6 +291,11 @@ section:nth-of-type(3) button:nth-of-type(2) {
 /******* GLITTER REGEN *******/
 /*****************************/
 
-/* img:first-of-type {
-  width: 30%;
-} */
+header img:first-of-type {
+    /* glitter regen als Easter Egg */
+    position: absolute;
+    width: 100vw;
+
+    background-image: url(/images/glitter-regen.gif);
+    background-repeat: repeat-x;
+}

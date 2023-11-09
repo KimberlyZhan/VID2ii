@@ -9,8 +9,8 @@ var schermerOutfit = document.querySelector("ul li:nth-of-type(5) button");
 var pandemieOutfit = document.querySelector("ul li:nth-of-type(6) button");
 
 //---------------- DIAMANTEN STEENTJES ----------------//
-var rozeDiamand = document.querySelector("section:nth-of-type(3) button:nth-of-type(1)");
-var geleDiamand = document.querySelector("section:nth-of-type(3) button:nth-of-type(2)");
+var rozeDiamant = document.querySelector("section:nth-of-type(3) button:nth-of-type(1)");
+var geleDiamant = document.querySelector("section:nth-of-type(3) button:nth-of-type(2)");
 
 //---------------- GLITTERREGEN ----------------//
 var glitterRegenBG = document.querySelector("header img:first-of-type");
@@ -93,7 +93,17 @@ margotGIF.addEventListener("click", function hiBarbieKen() {
 })
 
 //--- Diamanten steentjes Easter Egg elementen
-rozeDiamand.addEventListener("click", function glitterRegen() {
-    console.log("roze glitter regen valt naar beneden");
-    glitterRegenBG.classList.remove("hidden");
-})
+// rozeDiamant.addEventListener("click", function glitterRegen() {
+//     console.log("roze glitter regen valt naar beneden");
+//     glitterRegenBG.classList.remove("hidden");
+// })
+
+function glitterRegen() {
+    if (glitterRegenBG.classList.contains("hidden")){ // Leo heeft mij geholpen met deze if else, ik kan zelf niet precies uitleggen wat "contains" inhoudt.
+        glitterRegenBG.classList.remove("hidden");
+    } else {
+        glitterRegenBG.classList.add("hidden");
+    }
+}
+console.log(rozeDiamant.classList.contains("hidden"));
+rozeDiamant.addEventListener("click", glitterRegen);
