@@ -12,13 +12,15 @@ var pandemieOutfit = document.querySelector("ul li:nth-of-type(6) button");
 var rozeDiamant = document.querySelector("section:nth-of-type(3) button:nth-of-type(1)");
 var geleDiamant = document.querySelector("section:nth-of-type(3) button:nth-of-type(2)");
 
-//---------------- GLITTERREGEN ----------------//
+//---------------- GLITTER REGEN ----------------//
 var glitterRegenBG = document.querySelector("header img:first-of-type");
 
 //---------------- SFX ----------------//
 var glitterSound = document.querySelector("audio:nth-of-type(1)");
 var hiBarbieSound = document.querySelector("audio:nth-of-type(2)");
-var barbiegirlSong = document.querySelector("audio:nth-of-type(3)");
+var barbiegirlSong = new Audio("sfx/song-barbie-girl.mp3");
+
+var barbieMuziek = "uit";
 
 //---------------- INFORMATIE TEKST DETAIL ----------------//
 var titelElement = document.querySelector("h2");
@@ -26,7 +28,7 @@ var tekstElement = document.querySelector("section:nth-of-type(2) p");
 
 //---------------- GIF ANIMATIE ----------------//
 var margotGIF = document.querySelector("section:nth-of-type(2) button");
-    // het GIF plaatje valt soms weg en ik heb geen idee waar het dan aan ligt. Sam had mij geholpen en het gefixt en later deed 'ie het weer niet terwijl ik niks had veranderd ? Dus ik hoop dat die te zien is voor jullie!
+// het GIF plaatje valt soms weg en ik heb geen idee waar het dan aan ligt. Sam had mij geholpen en het gefixt en later deed 'ie het weer niet terwijl ik niks had veranderd ? Dus ik hoop dat die te zien is voor jullie!
 
 
 //---------------- FUNCTIONS & EVENTLISTENERS ----------------//
@@ -93,17 +95,27 @@ margotGIF.addEventListener("click", function hiBarbieKen() {
 })
 
 //--- Diamanten steentjes Easter Egg elementen
-// rozeDiamant.addEventListener("click", function glitterRegen() {
-//     console.log("roze glitter regen valt naar beneden");
-//     glitterRegenBG.classList.remove("hidden");
-// })
-
 function glitterRegen() {
-    if (glitterRegenBG.classList.contains("hidden")){ // Leo heeft mij geholpen met deze if else, ik kan zelf niet precies uitleggen wat "contains" inhoudt.
+    if (glitterRegenBG.classList.contains("hidden")) { // Leo heeft mij geholpen met deze if else, ik kan zelf niet precies uitleggen wat "contains" in houdt.
         glitterRegenBG.classList.remove("hidden");
     } else {
         glitterRegenBG.classList.add("hidden");
     }
 }
-console.log(rozeDiamant.classList.contains("hidden"));
+
 rozeDiamant.addEventListener("click", glitterRegen);
+
+
+
+function barbieGirl() {
+    if (barbieMuziek == "uit") {
+        barbiegirlSong.play();
+        barbieMuziek == "aan";
+
+    } else {
+        barbiegirlSong.pause();
+        barbieMuziek == "uit"; // Het liedje wilt niet meer uit wanneer ik weer op de gele diamant klik, geen idee waarom niet.
+    }
+}
+
+geleDiamant.addEventListener("click", barbieGirl);
